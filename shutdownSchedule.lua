@@ -54,6 +54,7 @@ end
 function shutdown_system()
     mp.osd_message("Shutting down system...")
     os.execute("shutdown /s /t 0")
+        -- os.execute("sudo shutdown -h now")  -- For Linux/macOS
 end
 
 -- Bind the shortcut key to cycle through shutdown options
